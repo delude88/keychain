@@ -4,7 +4,7 @@ project(keychain)
 
 option(BUILD_TESTS "Build tests for ${PROJECT_NAME}" OFF)
 
-add_library(${PROJECT_NAME})
+add_library(${PROJECT_NAME} STATIC)
 target_include_directories(${PROJECT_NAME}
     PUBLIC
         "include"
